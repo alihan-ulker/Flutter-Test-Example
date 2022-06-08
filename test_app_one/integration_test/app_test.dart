@@ -41,6 +41,8 @@ void main() {
         'icon_0',
         'icon_1',
         'icon_2',
+        'icon_3',
+        'icon_4',
       ];
 
       for (var icon in iconKeys) {
@@ -57,6 +59,8 @@ void main() {
         'remove_icon_0',
         'remove_icon_1',
         'remove_icon_2',
+        'remove_icon_3',
+        'remove_icon_4',
       ];
 
       for (final iconKey in removeIconKeys) {
@@ -65,6 +69,10 @@ void main() {
 
         expect(find.text('Favorilerden kaldırıldı.'), findsOneWidget);
       }
+
+      //geri buton kontrolü
+      await tester.tap(find.byIcon(Icons.arrow_back));
+      await tester.pumpAndSettle();
     });
   });
 
