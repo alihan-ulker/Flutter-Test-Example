@@ -17,3 +17,18 @@ Unit, Widget and Integration Tests
       sdk: flutter
     
     test: ^1.21.1
+
+## To run a test:
+    # Integration Test
+    flutter run integration_test/app_test.dart
+
+    # Unit Test
+    flutter run test/models/favorites_test.dart
+
+    # Flutter Driver Test
+    flutter run test/test_driver/app_test.dart
+
+    # Widgets Test
+    flutter run test/favorites_test.dart
+    flutter run test/home_test.dart
+    flutter run test/widget_test.dart
